@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Legend: View {
+public struct Legend: View {
     @ObservedObject var data: ChartData
     @Binding var frame: CGRect
     @Binding var hideHorizontalLines: Bool
