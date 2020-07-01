@@ -38,7 +38,7 @@ public struct Legend: View {
         return CGFloat(points.min() ?? 0)
     }
     
-    var body: some View {
+    public var body: some View {
         ZStack(alignment: .topLeading){
             ForEach((0...4), id: \.self) { height in
                 HStack(alignment: .center){
