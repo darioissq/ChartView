@@ -58,6 +58,8 @@ public struct Line: View {
         return curvedLines ? Path.quadClosedCurvedPathWithPoints(points: points, step: CGPoint(x: stepWidth, y: stepHeight), globalOffset: minDataValue) : Path.closedLinePathWithPoints(points: points, step: CGPoint(x: stepWidth, y: stepHeight))
     }
     
+    public init() {}
+    
     public var body: some View {
         ZStack {
             if(self.showFull && self.showBackground){
